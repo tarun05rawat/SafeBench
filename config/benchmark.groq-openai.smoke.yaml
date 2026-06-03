@@ -1,0 +1,23 @@
+benchmark_name: safebench-groq-openai-smoke
+dataset_path: data/prompts/starter_benchmark.yaml
+rubric_path: data/rubrics/scoring_guide.yaml
+output_dir: results/live
+concurrency: 1
+timeout_seconds: 60
+temperature: 0.0
+max_tokens: 200
+max_prompts: 2
+
+models:
+  - id: openai_gpt4o_mini
+    provider: openai_compatible
+    model_name: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+    base_url: https://api.openai.com/v1
+
+  - id: groq_gpt_oss_20b
+    provider: openai_compatible
+    model_name: openai/gpt-oss-20b
+    api_key_env: GROQ_API_KEY
+    base_url: https://api.groq.com/openai/v1
+
