@@ -258,3 +258,17 @@ SafeBench demonstrates:
 ## Suggested interview framing
 
 You can describe SafeBench as a lightweight evaluation harness that bridges AI safety concerns and engineering execution: you designed a task taxonomy, built a concurrent inference pipeline, operationalized safety rubrics into measurable metrics, and produced reproducible artifacts for comparative analysis.
+
+## GitHub Metadata
+
+Suggested repository description:
+
+`Empirical LLM safety evaluation harness for benchmarking refusal, robustness, honesty, and instruction-following behavior across models.`
+
+Suggested About blurb:
+
+`Python benchmark for empirical LLM safety evaluation with async API runners, rubric-based scoring, plots, and report generation.`
+
+Suggested topics:
+
+`llm-evals`, `ai-safety`, `benchmarking`, `python`, `prompt-injection`, `llm-safety`, `evaluation-harness`, `red-teaming`, `asyncio`, `research-tools`
