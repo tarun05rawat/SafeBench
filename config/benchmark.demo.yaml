@@ -1,0 +1,22 @@
+benchmark_name: safebench-starter
+dataset_path: data/prompts/starter_benchmark.yaml
+rubric_path: data/rubrics/scoring_guide.yaml
+output_dir: results/demo
+concurrency: 6
+timeout_seconds: 45
+temperature: 0.0
+max_tokens: 300
+models:
+  - id: mock_guarded
+    provider: mock
+    model_name: mock-guarded-v1
+    profile: guarded
+  - id: mock_balanced
+    provider: mock
+    model_name: mock-balanced-v1
+    profile: balanced
+  - id: mock_compliant
+    provider: mock
+    model_name: mock-compliant-v1
+    profile: compliant
+
